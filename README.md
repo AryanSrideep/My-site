@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aryan Srideep Portfolio</title>
+    <title>Aryan Srideep | Portfolio</title>
     <style>
-        body { font-family: sans-serif; background: #f0f2f5; color: #333; margin: 0; padding: 0; }
+        /* General layout */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
         
-        /* The Header section */
-        header { background: #0077b5; color: white; text-align: center; padding: 40px; }
-        .profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; }
+        /* Header & Profile Image */
+        header { background: #0077b5; color: white; text-align: center; padding: 30px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; object-fit: cover; }
         
-        /* The Main content area */
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
-        .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        /* Content Blocks */
+        .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        h2 { color: #0077b5; border-bottom: 1px solid #ddd; }
         
-        /* Simple Links and Badges */
+        /* Links and Lists */
         a { color: #0077b5; text-decoration: none; font-weight: bold; }
-        .badge { background: #e1e9ee; padding: 5px 10px; border-radius: 15px; margin: 5px; display: inline-block; font-size: 14px; }
+        .sub-section { margin-left: 20px; border-left: 2px solid #0077b5; padding-left: 15px; margin-top: 10px; }
+        
+        /* Skills badges */
+        .skill { background: #e1e9ee; padding: 5px 12px; border-radius: 12px; display: inline-block; margin: 5px; font-size: 14px; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="profile.jpg" alt="Aryan Srideep" class="profile-pic">
+    <img src="profile.jpg" alt="Aryan Srideep" class="profile-img">
     <h1>Aryan Srideep</h1>
-    <p>Engineering Student at GEC Kozhikode</p>
-    <a href="https://www.linkedin.com/in/aryan-srideep-6a6a4a37b" style="color: white; border: 1px solid white; padding: 10px; border-radius: 5px;">LinkedIn Profile</a>
+    <p>Engineering Student at <a href="https://geckkd.ac.in/" style="color: white; text-decoration: underline;">GEC Kozhikode</a></p>
+    <br>
+    <a href="https://www.linkedin.com/in/aryan-srideep-6a6a4a37b" style="background: white; color: #0077b5; padding: 10px 20px; border-radius: 20px;">LinkedIn Profile</a>
 </header>
 
 <div class="container">
+
     <div class="card">
         <h2>Education</h2>
-        <p>B.Tech at <a href="https://geckkd.ac.in/">GEC Kozhikode</a></p>
+        <p><strong>Bachelor of Technology</strong><br>
+        <a href="https://geckkd.ac.in/">Government Engineering College Kozhikode</a></p>
     </div>
 
     <div class="card">
-        <h2>Memberships</h2>
-        <p><strong>IEEE:</strong> <a href="https://sight.ieee.org/">SIGHT</a>, <a href="https://ias.ieee.org/">IAS</a>, <a href="https://www.ieee-ras.org/">RAS</a></p>
-        <p><strong>Others:</strong> <a href="https://mulearn.org/">µLearn</a>, <a href="https://geckkd.ac.in/iste.php">ISTE</a></p>
+        <h2>Professional Memberships</h2>
+        <p>Active member of <a href="https://www.ieee.org/">IEEE</a> and <a href="https://geckkd.ac.in/ieee.php">IEEE SB GECK</a>.</p>
+        
+        <strong>Technical Societies:</strong>
+        <div class="sub-section">
+            <p><strong>IEEE SIGHT:</strong> <a href="https://sight.ieee.org/">Humanitarian Technology</a></p>
+            <p><strong>IEEE IAS:</strong> <a href="https://ias.ieee.org/">Industry Applications</a></p>
+            <p><strong>IEEE RAS:</strong> <a href="https://www.ieee-ras.org/">Robotics and Automation</a></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Other Affiliations</h2>
+        <p>Member, <a href="https://geckkd.ac.in/iste.php">ISTE GECK Student Chapter</a></p>
+        <p>Contributor, <a href="https://mulearn.org/">µLearn GECK</a></p>
     </div>
 
     <div class="card">
         <h2>Skills</h2>
-        <span class="badge">C++</span>
-        <span class="badge">Robotics</span>
-        <span class="badge">HTML/CSS</span>
+        <div class="skill">Robotics (RAS)</div>
+        <div class="skill">Industrial Apps (IAS)</div>
+        <div class="skill">Humanitarian Tech (SIGHT)</div>
+        <div class="skill">C/C++</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">Leadership</div>
     </div>
+
 </div>
+
+<footer style="text-align: center; padding: 20px; color: #666;">
+    &copy; 2026 Aryan Srideep
+</footer>
 
 </body>
 </html>
